@@ -25,12 +25,12 @@ sudo snap install code --classic
 
 
 //INSTALL POSTGRESQL
-sudo apt-get install postgresql postgresql-contrib
+sudo apt-get install postgresql-14
 sudo service postgresql start
 sudo -u postgres createuser --superuser $USER
 createdb $USER
 
-sudo gedit /etc/postgresql/13/main/pg_hba.conf
+sudo gedit /etc/postgresql/14/main/pg_hba.conf
     //change all methods to 'trust'
 
 sudo service postgresql restart
