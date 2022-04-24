@@ -37,3 +37,9 @@ sudo gedit /etc/postgresql/14/main/pg_hba.conf
     //change all methods to 'trust'
 
 sudo service postgresql restart
+
+//OPTIONAL INSTALL BEEKEEPER STUDIO
+wget --quiet -O - https://deb.beekeeperstudio.io/beekeeper.key | sudo apt-key add -
+echo "deb https://deb.beekeeperstudio.io stable main" | sudo tee /etc/apt/sources.list.d/beekeeper-studio-app.list
+sudo apt update
+sudo apt install beekeeper-studio
