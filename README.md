@@ -43,3 +43,7 @@ wget --quiet -O - https://deb.beekeeperstudio.io/beekeeper.key | sudo apt-key ad
 echo "deb https://deb.beekeeperstudio.io stable main" | sudo tee /etc/apt/sources.list.d/beekeeper-studio-app.list
 sudo apt update
 sudo apt install beekeeper-studio
+
+
+//OPTIONAL INSTALL POSTMAN
+wget -O - https://gist.githubusercontent.com/SanderTheDragon/1331397932abaa1d6fbbf63baed5f043/raw/postman-deb.sh | sh
