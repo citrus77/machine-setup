@@ -16,6 +16,7 @@ nvm install node
 
 
 //INSTALL HEROKU
+//WARNING WE DO NOT USE HEROKU ANYMORE IT ISN'T FREE
 sudo snap install heroku --classic
 heroku login
 
