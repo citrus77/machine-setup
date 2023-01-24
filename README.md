@@ -17,12 +17,6 @@ nvm install node
 npm install -g win-node-env
 
 
-//INSTALL HEROKU
-//WARNING WE DO NOT USE HEROKU ANYMORE IT ISN'T FREE
-sudo snap install heroku --classic
-heroku login
-
-
 //INSTALL VSCODE
 sudo snap install code --classic
 
@@ -42,6 +36,7 @@ sudo gedit /etc/postgresql/14/main/pg_hba.conf
 sudo service postgresql restart
 
 //OPTIONAL INSTALL BEEKEEPER STUDIO
+//licensing changes, get community edition at https://github.com/beekeeper-studio/beekeeper-studio
 wget --quiet -O - https://deb.beekeeperstudio.io/beekeeper.key | sudo apt-key add -
 echo "deb https://deb.beekeeperstudio.io stable main" | sudo tee /etc/apt/sources.list.d/beekeeper-studio-app.list
 sudo apt update
