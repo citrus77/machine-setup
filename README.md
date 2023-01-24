@@ -13,6 +13,8 @@ sudo apt install curl
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash
     // restart terminal
 nvm install node
+//Windows
+npm install -g win-node-env
 
 
 //INSTALL HEROKU
