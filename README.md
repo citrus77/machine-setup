@@ -7,6 +7,13 @@ git config --global user.name 'USERNAME'
 git config --global user.email 'USER@EMAIL.COM'
 git config --global credential.helper store
 
+//GENERATE SSH KEY FOR GITHUB
+ssh-keygen -t ed25519 -C "your_email@example.com"
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_ed25519
+cat ~/.ssh/id_ed25519.pub
+    //copy key and paste in GitHub SSH Key settings
+
 
 //INSTALL NODE
 sudo apt install curl
