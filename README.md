@@ -36,7 +36,7 @@ sudo apt-get install postgresql-14
 sudo service postgresql start
 sudo -u postgres createuser --superuser $USER
 createdb $USER
-
+sudo apt install gedit
 sudo gedit /etc/postgresql/14/main/pg_hba.conf
     //change all methods to 'trust'
 
