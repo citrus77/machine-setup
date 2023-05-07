@@ -57,7 +57,7 @@ sudo gedit /etc/postgresql/15/main/pg_hba.conf
 ```
 sudo service postgresql restart
 ```
-### OPTIONAL INSTALL BEEKEEPER STUDIO -- LINUX ONLY, NOT FOR WSL (BUT CAN GET WINDOWS INSTALLER FROM GITHUB LINK BELOW)
+#### OPTIONAL INSTALL BEEKEEPER STUDIO -- LINUX ONLY, NOT FOR WSL (BUT CAN GET WINDOWS INSTALLER FROM GITHUB LINK BELOW)
 ##### licensing changes, get community edition at [https://github.com/beekeeper-studio/beekeeper-studio](https://github.com/beekeeper-studio/beekeeper-studio)
 ```
 wget --quiet -O - https://deb.beekeeperstudio.io/beekeeper.key | sudo apt-key add -
@@ -65,7 +65,7 @@ echo "deb https://deb.beekeeperstudio.io stable main" | sudo tee /etc/apt/source
 sudo apt update
 sudo apt install beekeeper-studio
 ```
-### OPTIONAL INSTALL POSTMAN -- LINUX ONLY, NOT FOR WSL
+#### OPTIONAL INSTALL POSTMAN -- LINUX ONLY, NOT FOR WSL
 ```
 wget -O - https://gist.githubusercontent.com/SanderTheDragon/1331397932abaa1d6fbbf63baed5f043/raw/postman-deb.sh | sh
 ```
