@@ -21,7 +21,7 @@ cat ~/.ssh/id_ed25519.pub
 ##### copy key and paste in GitHub SSH Key settings
 
 
-#3# INSTALL NODE
+### INSTALL NODE
 ```
 sudo apt install curl
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash
