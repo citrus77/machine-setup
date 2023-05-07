@@ -45,14 +45,15 @@ sudo snap install code --classic
 sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt $(lsb_release -cs)-pgdg main" > /etc/apt/sources.list.d/pgdg.list'
 wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
 sudo apt-get update
-sudo apt-get install postgresql-14
+sudo apt-get install postgresql
 sudo service postgresql start
 sudo -u postgres createuser --superuser $USER
 createdb $USER
 sudo apt install gedit
-sudo gedit /etc/postgresql/14/main/pg_hba.conf
+sudo gedit /etc/postgresql/15/main/pg_hba.conf
 ```
-### change all methods to 'trust'
+### change all methods to 'trust' in pg_hba.conf
+### currently the latest version of Postgres is 15 -- change the version number in the path to pg_hba.conf if different
 ```
 sudo service postgresql restart
 ```
