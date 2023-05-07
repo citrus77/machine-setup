@@ -3,9 +3,9 @@ Set up JS dev environment for Windows WSL / Linux
 
 //INSTALL GIT
 sudo apt install git
-git config --global user.name 'USERNAME'
+```git config --global user.name 'USERNAME'
 git config --global user.email 'USER@EMAIL.COM'
-git config --global credential.helper store
+git config --global credential.helper store```
 
 //GENERATE SSH KEY FOR GITHUB
 ssh-keygen -t ed25519 -C "your_email@example.com"
