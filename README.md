@@ -52,17 +52,18 @@ createdb $USER
 sudo apt install gedit
 sudo gedit /etc/postgresql/15/main/pg_hba.conf
 ```
-#### Postgres for Windows
-```
-psql -U postgres -c "CREATE ROLE <WINDOWS_USERNAME> LOGIN NOSUPERUSER INHERIT CREATEDB CREATEROLE;"
-createdb <WINDOWS_USERNAME>
-```
 
 ##### change all methods to 'trust' in pg_hba.conf
 ##### currently the latest version of Postgres is 15 -- change the version number in the path to pg_hba.conf if different
 ```
 sudo service postgresql restart
 ```
+#### Command line commands to set up Postgres for Windows, do not use with WSL
+```
+psql -U postgres -c "CREATE ROLE <WINDOWS_USERNAME> LOGIN NOSUPERUSER INHERIT CREATEDB CREATEROLE;"
+createdb <WINDOWS_USERNAME>
+```
+
 #### OPTIONAL INSTALL BEEKEEPER STUDIO -- LINUX ONLY, NOT FOR WSL (BUT CAN GET WINDOWS INSTALLER FROM GITHUB LINK BELOW)
 ##### licensing changes, get community edition at [https://github.com/beekeeper-studio/beekeeper-studio](https://github.com/beekeeper-studio/beekeeper-studio)
 ```
