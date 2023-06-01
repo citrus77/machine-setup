@@ -52,6 +52,12 @@ createdb $USER
 sudo apt install gedit
 sudo gedit /etc/postgresql/15/main/pg_hba.conf
 ```
+####Postgres for Windows
+...
+psql -U postgres -c "CREATE ROLE <WINDOWS_USERNAME> LOGIN NOSUPERUSER INHERIT CREATEDB CREATEROLE;"
+createdb <WINDOWS_USERNAME>
+...
+
 ##### change all methods to 'trust' in pg_hba.conf
 ##### currently the latest version of Postgres is 15 -- change the version number in the path to pg_hba.conf if different
 ```
