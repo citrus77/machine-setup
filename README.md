@@ -52,7 +52,7 @@ createdb $USER
 sudo apt install gedit
 sudo gedit /etc/postgresql/15/main/pg_hba.conf
 ```
-####Postgres for Windows
+#### Postgres for Windows
 ...
 psql -U postgres -c "CREATE ROLE <WINDOWS_USERNAME> LOGIN NOSUPERUSER INHERIT CREATEDB CREATEROLE;"
 createdb <WINDOWS_USERNAME>
